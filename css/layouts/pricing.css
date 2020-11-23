@@ -1,0 +1,999 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+ html{
+     scroll-behavior: smooth;
+ }
+body {
+    color: #0080A1;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:#0080A1;
+}
+
+.pure-g [class*="pure-u"] {
+    font-family: 'Roboto', sans-serif;
+}
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+section{
+    min-height: 100vh;
+    padding-top:5rem;
+    padding-bottom: 4rem;
+}
+
+section#howto,section#beachte{
+    background:#0080A1;
+}
+.section-headline{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align:center;
+    position: relative;
+}
+
+section#howto .section-headline{
+    padding-bottom: 2rem;
+	color:#ebf2f9;
+}
+#sponsoren .section-headline,#werbung .section-headline{
+	color:#ebf2f9;
+}
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+ header{
+     position: fixed;
+     z-index: 5;
+     width:100%;
+     border-bottom:3px solid #ebf2f9;
+     height: 62px;
+     background: #0080A1;
+ }
+.main-menu {   
+    position: fixed;
+}
+
+.main-menu .pure-menu-link {
+    padding: 1em;
+    color:#ebf2f9;
+    font-size: 1.2rem;
+}
+
+.main-menu .pure-menu-link:hover {
+    color:#ebf2f9;
+    background:#0080A1;
+}
+.main-menu .pure-menu-link:focus{
+    background:#0080A1;
+}
+.main-menu .pure-menu-link:hover:after {
+    content: "";
+    width: 40%;
+    position: absolute;
+    background:#0080A1;
+    bottom: 5px;
+    left: calc(50% - 20%);
+    border-bottom: 5px solid
+        #ebf2f9;
+        text-align: center;
+    }
+
+
+.main-menu .pure-menu-list {
+    text-align: center;
+    width: 100%;
+}
+
+/*Mobil Menu*/
+
+#navswitcher{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    opacity: 0;
+}
+
+.burger-btn{
+    display: none;
+}
+@media (max-width: 991px) {
+    .main-menu{
+        transform: translateX(0);
+        height: 100vh;
+        background: #ebf2f9;
+        width:100%;
+        left:-100%;
+        top:65px;
+        -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+    }
+
+    .main-menu .pure-menu-link{
+        color:#0080A1;
+
+    }
+    .main-menu .pure-menu-link:hover:after{
+        display: none;
+    }
+
+     #navswitcher[type=checkbox]:checked{
+        transform: translateX(0px);
+    }
+
+    #navswitcher[type=checkbox]:checked + .main-menu{
+        transform: translateX(100%);
+    }
+
+    .burger-btn{
+        display: block;
+		color:#ebf2f9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+    }
+
+    .burger-btn i{
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #navswitcher[type=checkbox]:checked .main-menu span{
+        transform: translateX(0px);
+    }
+}
+
+/*User Button*/
+.user-menu{
+    position:fixed;
+    top:.7em;
+    right:5%;
+    z-index: 10;
+    background:#fff;
+    width:auto;
+}
+
+.user-menu .pure-menu-children{
+    width: 100%;
+}
+
+#register-button{
+    display: inline-block;
+    position: fixed;
+    right: calc(5% + 80px);
+    top: .7em;
+    background: #fff;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#register-button:hover{
+    background:#eee;
+}
+
+.chosePaket{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.chosePaket a{
+    text-decoration: none;
+    display: block;
+    padding:1em;
+    outline: none;
+    background: #0080A1;
+}
+.chosePaket a:hover{
+    background:#000;
+    color: #0080A1;
+}
+
+
+@media(max-width:991px){
+    #register-button{
+        right: calc(2% + 100px);
+    }
+}
+
+@media (max-width:587px){
+    .main-menu .pure-menu-list {
+        text-align: left;
+    }
+
+    .user-menu{
+        right:2%;
+    }
+
+    .section-headline{
+        font-size: 1.5rem;
+    }
+    #register-button{
+        right: calc(2% + 80px);
+    }
+}
+
+
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+ .splash-container {
+    background: #0080A1;
+    z-index: 2;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(max-width:587px){
+    .splash {
+    top:0;
+    }
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ebf2f9;
+    font-weight: 100;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: #ebf2f9;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+#logo{
+    display: inline-block;
+    position: relative;
+}
+#logo img
+{
+    width:12vw;
+}
+#logo:before{
+    background-image:url('../../images/made-siegel.png') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 8vw;
+    height: 8vw;
+    top: -4.5vw;
+    right: -4vw;
+
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #logo img
+    {
+    width:18vh;
+    }
+
+    #logo:before{
+        width: 10vh;
+        height: 10vh;
+        content: '';
+        top: -4.5vh;
+        right: -4vh;
+    }
+}
+/*
+* -- CONTENT STYLES --
+* This represents the content area (everything below the blue section)
+*/
+.content-wrapper {
+   /* These styles are required for the "scroll-over" effect */
+   position: absolute;
+   top: 100%;
+   width: 100%;
+   min-height: 12%;
+   z-index: 2;
+   background: white;
+
+}
+
+/*Einleitung*/
+.einleitung{
+    text-align: left;
+}
+
+/*Steps*/
+
+.howto-step{
+    margin-bottom:2em;
+    box-sizing: border-box;
+}
+.howto-step-header{
+    position: relative;
+    background: #ebf2f9;
+    color: #0080A1;
+    padding: 2em 1em 1em;
+    text-align: center;
+	border-bottom: 2px solid #0080A1;
+
+}
+
+.howto-step-content{
+    background: #ebf2f9;
+    padding: 1em;
+    color:#0080A1;
+}
+
+
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+ .pricing-tables,
+ .information,.sponsoren,.faq,.t-shirt,.mypakete {
+    max-width: 1140px;
+    margin: 0 auto;
+ }
+.pricing-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- PRICING TABLE  --
+ * Every pricing table has the .pricing-table class
+ */
+.pricing-table {
+    border: none;
+    margin: 0 0.5em 2em;
+    padding: 0 0 2em;
+    background: #ebf2f9;
+    text-align: center;
+}
+
+.pricing-table-header {
+    background: #ebf2f9;
+    color: #0080A1;
+    padding-bottom: 1em;
+    position: relative;
+    text-align:center;
+}
+
+
+    .pricing-table-header h2 {
+        margin: 0;
+        padding: 2em;
+        font-size: 1em;
+        font-weight: normal;
+        color:#ebf2f9;
+        background:#0080A1;
+        margin-bottom:1em;
+    }
+
+    .pricing-table-header h2.second {
+        background:#fff;
+    }
+
+
+/*
+ * -- PRICING TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+.pricing-table-price {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+    .pricing-table-price span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.2em;
+        padding-bottom: 2em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        *color: #0080A1;
+    }
+
+ 
+.paket-button{
+    position: relative;
+}
+
+.paket-button input{
+    cursor: pointer;
+}
+.pure-button-primary:hover{
+    cursor: pointer;
+    background: #ebf2f9 !important;
+    color:#0080A1 !important;
+}
+#paketwahl,#paketwahl-add{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid #0080A1;
+    margin-bottom: 2rem;
+    background: rgba(255,230,0,.2);
+}
+
+#double{
+    width:100%;
+    height: 100%;
+    top:0;
+}
+/*
+ * -- PRICING TABLE LIST --
+ * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
+ */
+.pricing-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*
+ * -- PRICING TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each pricing table
+ */
+.pricing-table-list li {
+    padding: 0.8em 0;
+    background: #ebf2f9;
+    color:#0080A1;
+    border-bottom: 1px solid #0080A1;
+}
+
+.pricing-table-list li:first-child {
+    border-top: 1px solid #0080A1;
+}
+
+
+/*Beachte*/
+.beachte{
+padding: 0 .5em;
+    box-sizing: border-box;
+}
+
+.beachte .pricing-table-header{
+    padding-bottom: 0;
+}
+
+.beachte .pricing-table-header h2{
+    margin-bottom: 0;
+}
+
+.point-beachte{
+    list-style: none;
+    padding-left:0;
+    display: table;
+    border-collapse: collapse;
+}
+.point-beachte li{
+    display: table-row;
+    font-size: 1.2em;
+    padding:1em;
+    vertical-align: middle;
+    background: #ebf2f9;
+    color: #0080A1;
+    text-align: left;
+    padding:0.5em 0;
+    border:1px solid #0080A1
+}
+.point-beachte li:first-child{
+    background:#0080A1;
+    color:#fff;
+    width: 25px;
+    border-bottom: 1px solid #0080A1;
+   
+}
+
+.point-beachte li span{
+    display: inline-block;
+    padding:.5em;
+}
+
+.point-beachte li:first-child span:first-child{
+    width:30px;
+    text-align:center;
+}
+
+.bg-step{
+    background: #ebf2f9;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * -- PRICING TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a pricing table.
+ * This inherits from Pure Button.
+ */
+
+.pure-button-primary{
+    background:#0080A1 !important;
+    color:#ebf2f9 !important;
+    border:2px solid #0080A1;
+    margin-top:2em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+
+
+.step-pos{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 30px;
+}
+
+.step{
+    position: absolute;
+top: 0;
+left: -100%;
+display: inline-block;
+background:#ebf2f9;
+width: 60px;
+height: 60px;
+line-height: 60px;
+text-align: center;
+border-radius: 60px;
+font-size: 2em;
+border:5px solid #0080A1;
+color:#0080A1;
+}
+
+
+
+.pricing-table p{
+    color:#fff;
+    padding:1em;
+}  
+  /* The element to apply the animation to */
+#meldung{
+    position:fixed;
+    top:80px;
+    left:5%;
+    width:90%;
+    text-align: center;
+    padding: 1rem;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    z-index: 3;
+    box-sizing: border-box;
+
+}
+
+.error{
+    background:rgba(255,0,0,0.7);
+    color:#fff;
+}
+
+.success{
+        background: rgba(0,128,0,0.7);
+        color:#fff;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+    /*Forms*/
+
+input[type="text"],input[type="email"],input[type="password"],select[type="select"]{
+    background: transparent;
+    border-radius: 0 !important;
+    border-top: none !important ;border-right: none !important;border-left: none !important;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin-bottom:1rem !important;
+    font-size:1.5rem;
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,select[type="select"]:focus{
+    border-bottom: 1px solid #0080A1 !important;
+    
+}
+
+#setCompleted input[type="text"]:disabled {
+    background: #ddd;
+}
+label{
+    color:#000;
+}
+
+select{
+    width:100%;
+}
+
+button[type="submit"]{
+    margin-top:2rem;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    z-index: 5;
+    opacity: 0;
+    left:0;
+    top:0;
+  }
+  input[type="checkbox"] + label {
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    background-color: #EEE;
+    display: inline-block;
+    content: "";
+    
+    margin-right: 5px;
+    transition: background-color 0.5s linear;
+    margin-top: 15px;
+  }
+  input[type="checkbox"] + label:hover {
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    transition: margin 0.1s linear;
+    box-shadow: 0px 0px 5px #aaa;
+  }
+  input[type="checkbox"]:checked+label{
+    background-color: #2b8718;
+  }
+  input[type="checkbox"]:checked+label::before {
+    margin: 0 0 0 30px;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+  }
+  input[type="checkbox"] + label::after {
+      content: "";
+      position: absolute;
+      left: 70px;
+      top: 5px;
+      width:300px;
+  }
+#datenschutz_out,#mitglied_out,#veroffentlichen_out{
+    position: relative;
+    height: 60px;
+}
+
+.zustimmen{
+    border:1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+
+#mitglied_out span{
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+
+#mitglied_out label{
+    position: absolute;
+    left:0;
+}
+
+#veroffentlichen{
+    left:0;
+}
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 991px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+}
+
+
+/*Modal*/
+
+.challenge-head{
+    width: 100%;
+    text-align: center;
+    background: #0080A1;
+    margin-bottom: 0;
+    padding:1rem;
+}
+
+.challenge-item{
+    background: #000;
+    border-bottom: 1px solid #0080A1;
+    color:#fff;
+    padding:1rem;
+}
+
+.challenge span{
+    display: inline-block;
+    width:50%;
+}
+.challenge .label{
+    font-weight: bold;
+
+}
+
+
+#modal-start-content{
+    text-align: center;
+}
+
+#modal-start-content h1{
+    background: #0080A1;
+    padding: 1em;
+    margin: 0;
+}
+#modal-start-content p{
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding:1em;
+}
+
+#buttons-konto{
+    padding-bottom: 2em;
+}
+
+#buttons-konto a{
+    background: #0080A1;
+    border:1px solid #0080A1;
+    display: inline-block;
+    color: #000;
+}
+#buttons-konto a:hover{
+    background: #fff;
+    cursor: pointer;
+}
+
+.down-startnummer{
+    background: #0080A1;
+    padding:.2em;
+}
+
+#admin-board{
+    padding-top:100px;
+}
+
+#meldung-konto{
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#paypal-button{
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 10px;
+    top: 7px;
+    position: relative; 
+}
+
+
+#sponsoren{
+    padding-top:4rem;
+    padding-bottom: 4rem;
+    background:#0080A1
+}
+
+#slogan{
+    background: #0080A1;
+    padding:0 0 3em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#slogan span{
+    width:100%;
+    text-align: center;
+    display: block;
+}
+
+
+#werbung{
+    background:#0080A1;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+
+/* Shirt*/
+.t-shirt{
+    text-align: center;
+}
+.t-shirt img{
+    width: 50%;
+}
+#shirt,#myPakete,#home{
+    min-height: auto;
+}
+
+.t-shirt .hash-out{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.t-shirt span.hashtag{
+    color:#0080A1
+}
+
+#shirt .section-headline{
+    margin-bottom:0 !important;
+}
+/*Sponsoren*/
+#sponsoren img{
+    width: 100%;
+}
+
+.sponsoren div{
+    box-sizing: border-box;
+}
+
+
+/*footer*/
+footer{
+    background:#0080A1;
+    padding:.5em 0;
+    border-top:3px solid #000;
+}
+
+.footer-menu{
+    text-align:center;
+}
+
+.footer-menu .pure-menu-link{
+    color:#000;
+}
+
+.footer-menu .pure-menu-link:hover,.footer-menu .pure-menu-link:focus{
+    background:#0080A1;
+    color:#333;
+}
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+    
+}
+
+
+/*Adminbereich*/
+#addAdmin,#setPaid,#exportForm,#setCompleted{
+    border:1px solid #ccc;
+    padding:2em .5em;
+    box-sizing: border-box;
+    margin-top:0;
+}
+
+.liste{
+    display: table;
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.line{
+    display: table-row;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.line:nth-child(odd){
+    background: #ccc;
+}
+.line:first-child{
+    background: #0080A1;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+.column{
+    display: table-cell;
+    padding:.5em;
+}
+
+
+
+@media (max-width: 350px) {
+    .footer-menu .pure-menu-item:last-child{
+        display: block;
+    }
+}
+
+
+
+

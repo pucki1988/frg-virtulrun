@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="max-age=86400" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="FRG Virtual Run 2020 | DJK SG Schönbrunn a.L.">
+    <meta name="description" content="Mach mit beim Virtual Run im Landkreis Freyung-Grafenau. Stell dich der Herausforderung und sichere dir ein Finisher-Shirt + Urkunde."/> 
+    <meta name="keywords" content="Virtual Run, Virtual Race, Virtual Run FRG, Laufevent FRG, Landkreis-Laufcup FRG, waidlerthon"/>
+    <meta property="og:title" content="FRG Virtual Run 2020 | DJK SG Schönbrunn a.L."/>
+    <meta property="og:description" content="Mach mit beim Virtual Run im Landkreis Freyung-Grafenau. Stell dich der Herausforderung und sichere dir ein Finisher-Shirt + Urkunde."/>
+    <meta property="og:url" content="https://frg-virtualrun.de"/>
+    <meta property="og:image" content="https://frg-virtualrun.de/images/frg-ogtag.png"/>
+    <title>FRG Virtual Run 2020 | DJK SG Schönbrunn a.L.</title>
+
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffe600">   
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1342749832.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+   
+            
+            <link rel="stylesheet" href="css/layouts/pricing.css">
+            <link rel="stylesheet" href="css/layouts/modal.css">
+</head>
+<body>
+<header>
+<span class="burger-btn"><i class="fas fa-bars"></i></span>
+<input type="checkbox" id="navswitcher">
+<div class="pure-menu pure-menu-horizontal main-menu">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Herausforderung</a></li>
+        <li class="pure-menu-item"><a href="#howto" class="pure-menu-link">So funktioniert's</a></li>
+        <li class="pure-menu-item"><a href="#faq" class="pure-menu-link">FAQ</a></li>
+        <!--<li class="pure-menu-item"><a href="#anmelden" class="pure-menu-link">Anmelden</a></li>-->
+    </ul>
+    
+    
+</div>
+
+<!--<a class="pure-button  user-button logged-in" id="logout">Ausloggen</a>-->
+<a id="register-button" class="pure-menu-link logged-out" style="display: none;">Anmelden</a>
+<div class="pure-menu pure-menu-horizontal user-menu">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item logged-out" style="display: none;"><a id="login-button" class="pure-menu-link">Login</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover logged-in" style="display: none;">
+            <a href="#" id="menuLink1" class="pure-menu-link">Account</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item logged-in" style="display: none;"><a href="#" id="challenges-button"  class="pure-menu-link">Challenge</a></li>
+                <!--<li class="pure-menu-item admin" style="display: none;"><a href="#" id="admin-button"  class="pure-menu-link">Admin</a></li>-->
+                <li class="pure-menu-item logged-in" style="display: none;"><a href="#" id="logout" class="pure-menu-link">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</header>
+<div class="pure-g information admin-actions admin l-box"  id="admin-board" style="display: none;">
+    
+</div>
+<div id="switch-container">
+<div class="splash-container">
+    <div class="splash">
+        <div id="logo"><img src="images/logo_sg.png"></div>
+        <div class="slogan"><h1 class="splash-head">FRG Virtual Run 2020</h1></div>
+        <p class="splash-subhead">
+           Stell dich der Herausforderung und bleib gesund<br/>
+           #sportalleingemeinsam
+        </p>
+        <p>
+            <a href="#home" id="mach-mit" class="pure-button pure-button-primary mach-mit">Mach mit</a>
+            
+        </p>
+        
+    </div>
+</div>
+<!--<div class="prevideo">
+    <video id="myVideo" class="thevideo"  loop preload controls muted>
+      <source src="images/video.mp4" type="video/mp4">
+    </video>
+  </div>-->
+<div class="content-wrapper">
+<section id="home">
+    
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        <h3 class="section-headline">Herausforderung</h3>
+        <div class="pure-u-1 l-box einleitung">
+            <p>
+                <b>Liebe Sportfans,</b><br/> die Sorge über die Ausbreitung des Coronavirus beschäftigt uns alle und wirbelt den Alltag kräftig durcheinander. Als Sportverein möchten wir daher einen Anreiz geben, dennoch weiter in Bewegung zu bleiben. Wir sehen es als unsere Aufgabe, auch in dieser Zeit Sport für alle attraktiv zu gestalten. Gemäß dem Motto <span>#sportalleingemeinsam</span>.
+            </p>
+            <p>
+                Lockdown, Quarantäne, Abstand halten – schwierige Zeiten für uns alle. Doch wir stehen das gemeinsam durch und lassen uns nicht unterkriegen. Wir joggen, sitzen im Fahrradsattel, schnüren die Wanderschuhe oder greifen nach den Nordic-Walking-Stöcken oder oder oder, denn Sport im Freien ist - Gott sei Dank - weiterhin erlaubt (neuerdings sogar mit einer Kontaktperson eurer Wahl, auch außerhalb des eigenen Hausstandes).
+            </p>
+            <p>
+                Mit dieser Aktion wollen wir euch motivieren, den Kopf weiterhin nicht in den Sand zu stecken und die Gelegenheit beim Schopfe zu packen, um ganz individuell Sport zu treiben - ob alleine, mit der Familie oder mit eurer auserwählten Kontaktperson. 
+            </p>
+            <p>
+                Der erste FRG Virtual Run schafft dabei die Möglichkeit und die Rahmenbedingungen, sich selbst in diesem Frühling ein Ziel zu setzen, darauf hin zu trainieren und dieses Ziel bestenfalls auch zu erreichen. Wer jetzt die Chance nutzt, kann sich, ganz ohne Druck von außen, zu neuen Bestleistungen pushen. Es gibt keine festgelegte Strecke und keine Zeitnahme. Man kann fast sagen, dass jeder machen kann, wozu er Lust hat. 
+            </p>
+            <p>
+                <b>Jetzt teilnehmen:</b> Bewegung im Freien ist das Beste, was du für deine Gesundheit und somit für dich selbst machen kannst.  
+            </p>
+            <p><b>Wettkampfzeitraum bis 14.Juni 2020 verlängert</b><br/>Aufgrund der schlechten Wettervorhersage wollen wir unseren Teilnehmern die Möglichkeit geben, ihre Disziplinen bei gutem Wetter zu absolvieren.</p>
+            <p><b>Wann bekomme ich mein Finisher-Shirt?</b><br/>
+Das Finisher-Shirt bekommst du nur, wenn du bis zur Wettkampfwoche die Startgebühr bezahlt und einen Nachweis über die Aktivität(en) mit Zeit und Distanz eingereicht hast. Das Finisher-Shirt kann dann ab dem 10. Juni bei Sport Schuster in Freyung abgeholt werden.<br/>
+<b>Hinweis:</b> Für alle Anmeldungen nach dem 06. Juni. Hier kann das Finisher-Shirt voraussichtlich ab dem 23. Juni abgeholt werden.<br/>
+            </p><p><b>Finisher-Shirt Versand:</b> Für Teilnehmer die mit einem Wohnort außerhalb des Lankreises Freyung-Grafenau bieten wir einen kostenlosen Versand an. Einfach per E-Mail oder WhatsApp melden.
+</p>
+        
+        </div>
+        
+         
+    </div> <!-- end pricing-tables -->
+</div>
+
+</section>
+
+
+<section id="howto">
+    <div class="l-content">
+        <div class="information pure-g">
+            <h3 class="section-headline">So funktioniert's</h3>
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step">1</span></span>
+                        <h3 class="second">Disziplin Wählen </h3>
+                </div>
+                <div class="howto-step-content">
+                    <p>Zur Auswahl stehen verschiedene Disziplinen und Distanzen. Dabei können auch zwei Sportarten kombiniert werden, sozusagen als Double / Duathlon. Ebenfalls möglich, wie ausdrücklich auch erwünscht, ist die Teilnahme von Kindern. </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step">2</span></span>
+                        <h3 class="second">Für dein Ziel Trainieren</h3>
+                </div>
+                <div class="howto-step-content">
+                    <p>Hast du dich für deine Disziplin(en) entschieden, heißt es trainieren. Genieß die Bewegung und die Zeit an der frischen Luft. Der Trainingszeitraum beginnt mit der Anmeldung und endet am 28. Mai 2020.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step">3</span></span>
+                        <h3 class="second">Herausforderung meistern</h3>
+                </div>
+                <div class="howto-step-content">
+                    <p>Wettkampfwoche - meistert eure Herausforderung und zeichnet diese zwischen dem 29. Mai - 14. Juni 2020 auf. Als Nachweis für die Teilnahme sind Screenshots der unterschiedlichsten Lauf-Apps, wie z.B. Runtastic, Strava, Garmin Connect, Polar Flow etc., gestattet. Gerne kannst du dazu auch noch ein authentisches Beweisfoto schießen. Wichtig ist, dass du einen Nachweis über deine Disziplinen erbringst.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step">4</span></span>
+                        <h3 class="second">Nachweis senden</h3>
+                </div>
+                <div class="howto-step-content">
+                    <p>Übersende den Nachweis per WhatsApp oder E-Mail. Dieser wird einer wohlwollenden Prüfung unterzogen. Im Anschluss wird die Urkunde per E-Mail versandt. Das Finisher-Shirt kann ab dem 10. Juni bei Sport Schuster in Freyung abgeholt werden. (Für Anmeldungen ab dem 06.Juni ist die Abholung ab dem 23. Juni möglich)
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+            <h3 class="section-headline">Disziplinen & Distanzen</h3>
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step"><i class="fas fa-male"></i></span></span>
+                        <h3 class="second">Erwachsene</h3>
+                </div>
+                <div class="howto-step-content">
+                    <div class="beachte">
+                        <!--<div class="pricing-table-header"><h2>Wichtig Regeln</h2></div>-->
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-running"></i></span><span>Laufen</span></li><li><span>5km | 10km | Halbmarathon | Marathon</span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-biking"></i></span><span>Radfahren</span></li><li><span>20km | 35km | 75km | 100km</span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-biking"></i></span><span>E-Bike</span></li><li><span>20km | 35km | 75km | 100km</span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-walking"></i></span> <span>Nordic Walking</span></li><li><span>5km | 10km</span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-hiking"></i></span> <span>Wandern</span></li><li><span>1h | 2h | 4h</span></li>
+                        </ul>
+                        
+            
+                    </div>
+                     
+
+                    
+                </div>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 howto-step l-box">
+                <div class="bg-step">
+                <div class="howto-step-header">
+                        <span class="step-pos"><span class="step"><i class="fas fa-child"></i></span></span>
+                        <h3 class="second">Kinder (ab Jahrgang 2005)</h3>
+                </div>
+                <div class="howto-step-content">
+                    <div class="beachte">
+                        <!--<div class="pricing-table-header"><h2>Wichtig Regeln</h2></div>-->
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-running"></i></span><span>Laufen</span></li><li><span>3km | 5km</span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-biking"></i></span><span>Radfahren</span></li><li><span>10km | 15km </span></li>
+                        </ul>
+                        <ul class="point-beachte pure-u-1">
+                            <li><span><i class="fas fa-hiking"></i></span> <span>Wandern</span></li><li><span>1h | 2h | 4h</span></li>
+                        </ul>
+                        
+                    </div>
+                     
+
+                    
+                </div>
+                </div>
+            </div>
+            
+        </div> <!-- end information -->
+    </div> <!-- end l-content -->
+</section>
+<section id="myPakete">
+    <div class="l-content">
+    <div class="mypakete pure-g">
+    <h3 class="section-headline">Pakete</h3>
+        
+    <div class="pure-u-1 pure-u-md-1-3" id="paket">
+        <div class="pricing-table pricing-table-basic">
+            <div class="pricing-table-header">
+                <h2>Double</h2>
+
+                <span class="pricing-table-price">
+                    €25
+                </span>
+            </div>
+
+            <ul class="pricing-table-list">
+                <li>Wähle zwei Disziplinen aus</li>
+                <li>Urkunde mit deiner Laufzeit</li>
+                <li>Finisher-Shirt</li>
+            </ul>
+
+            <!--<a href="#howto" class="pure-button pure-button-primary">Wie geht's</a>-->
+            <a href="#anmelden" class="pure-button pure-button-primary paket-button"><input id="double" type="checkbox">Anmelden</a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-3">
+        <div class="pricing-table pricing-table-basic">
+            <div class="pricing-table-header">
+                <h2>Single</h2>
+
+                <span class="pricing-table-price">
+                    €19
+                </span>
+            </div>
+
+            <ul class="pricing-table-list">
+                <li>Wähle eine Disziplin aus</li>
+                <li>Urkunde mit deiner Laufzeit</li>
+                <li>Finisher-Shirt</li>
+            </ul>
+
+            <!--<a href="#howto" class="pure-button pure-button-primary">Wie geht's</a>-->
+            <a href="#anmelden" class="pure-button pure-button-primary paket-button"><input id="single" type="checkbox">Anmelden</a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-3">
+        <div class="pricing-table pricing-table-basic">
+            <div class="pricing-table-header">
+                <h2>Kids</h2>
+
+                <span class="pricing-table-price">
+                    €12
+                </span>
+            </div>
+
+            <ul class="pricing-table-list">
+                <li>Wähle eine oder zwei Disziplinen</li>
+                <li>Urkunde mit deiner Laufzeit</li>
+                <li>Finisher-Shirt</li>
+            </ul>
+
+            <!--<a href="#howto" class="pure-button pure-button-primary">Wie geht's</a>-->
+            <a href="#anmelden" class="pure-button pure-button-primary paket-button"><input id="kids" type="checkbox">Anmelden</a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section id="anmelden" style="display: none;">
+    <div class="l-content">
+        <div class="information pure-g">
+            
+            <!--<h3 class="section-headline">Registrierung</h3>-->
+            <div class="pure-u-1 ">
+                
+                <div class="l-box">
+                    <div id="paketwahl"></div>
+                    <form class="pure-form pure-form-stacked" id="register-form">
+                        <input id="chosePaket" value="" hidden>
+                        <fieldset>
+                            <div class="pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    
+                                    <input id="vorname" required placeholder="Vorname" class="pure-u-23-24" type="text">
+                                                                     
+                                </div>
+                                
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    
+                                    <input id="nachname" required placeholder="Nachname" class="pure-u-23-24" type="text">
+                                </div>
+                    
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <input id="email" placeholder="E-Mail" class="pure-u-23-24" type="email" required>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <input id="geburtsjahr" maxlength="4" pattern="[0-9]{4}" placeholder="Geburtsjahr" title="Three letter country code" class="pure-u-23-24" type="text" required>
+                                </div>
+                                <!--<div class="pure-u-1 pure-u-md-1-2">
+                                    <input id="passwort" placeholder="Passwort" class="pure-u-23-24" type="password" required>
+                                </div>-->
+
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    Geschlecht<select id="geschlecht" class="pure-input-23-24" type="select">
+                                        <option value="weiblich">weiblich</option>
+                                        <option value="männlich">männlich</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    Finisher-Shirt Größe<select id="konfektion" class="pure-input-23-24" type="select">
+                                        <option value="104">Kindershirt 104</option>
+                                        <option value="116">Kindershirt 116</option>
+                                        <option value="128">Kindershirt 128</option>
+                                        <option value="140">Kindershirt 140</option>
+                                        <option value="152">Kindershirt 152</option>
+                                        <option value="164">Kindershirt 164</option>
+                                        <option value="KA">Kleinere Kindergrößen (auf Anfrage)</option>
+                                        <option selected value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                        <option value="kein">kein Shirt</option>
+                                    </select>
+
+                                </div>
+
+                                
+                                                                
+                            </div>
+                            
+                            <div class="pure-g">
+                                <div id="mitglied_out" class="pure-checkbox pure-u-1 pure-u-md-1-2">
+                                    <span>Vereinsmitglied DJK SG Schönbrunn</span>
+                                        <input id="mitglied" type="checkbox">
+                                        <label></label>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <input id="vereinsname" placeholder="Verein (wenn nicht DJK SG Schönbrunn)" class="pure-u-23-24" type="text" required>
+                                </div>
+                                <div class="pure-u-1">
+                                    <label for="zahlungsart">Zahlungsart</label>
+                                    <select id="zahlungsart" class="pure-input-23-24" type="select">
+                                        <option value="Überweisung">Überweisung</option>
+                                        <option value="PayPal">PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="pure-g" id="sports-options">
+                                <div class="pure-u-1 pure-u-md-11-24 sportart-1">
+                                    <label for="sportart">Sportart</label>
+                                    <select id="sportart-1" class="pure-input-1" type="select">
+                                        <option value="Laufen">Laufen</option>
+                                        <option value="Radfahren">Radfahren</option>
+                                        <option value="Radfahren (E-Bike)">Radfahren (E-Bike)</option>
+                                        <option value="Nordic Walking">NordicWalking</option>
+                                        <option value="Wandern">Wandern</option>
+                                    </select>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-2-24"></div>
+                                <div class="pure-u-1 pure-u-md-11-24 leistung-1">
+                                    <label for="leistung">Distanz/Zeit</label>
+                                    <select id="leistung-1" class="pure-input-23-24" type="select">
+                                        <option value="5 km">5 km</option>
+                                        <option value="10 km">10 km</option>
+                                        <option value="Halbmarathon">Halbmarathon</option>
+                                        <option value="Marathon">Marathon</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="pure-u-1 pure-u-md-11-24 sportart-2">
+                                    <label for="sportart">Sportart 2</label>
+                                    <select id="sportart-2" class="pure-input-1" type="select">
+                                        <option value="Laufen">Laufen</option>
+                                        <option value="Radfahren">Radfahren</option>
+                                        <option value="Radfahren (E-Bike)">Radfahren (E-Bike)</option>
+                                        <option value="Nordic-Walking">Nordic-Walking</option>
+                                        <option value="Wandern">Wandern</option>
+                                    </select>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-2-24"></div>
+                                <div class="pure-u-1 pure-u-md-11-24 leistung-2">
+                                    <label for="leistung">Distanz/Zeit</label>
+                                    <select id="leistung-2" class="pure-input-23-24" type="select">
+                                        <option value="5 km">5 km</option>
+                                        <option value="10 km">10 km</option>
+                                        <option value="Halbmarathon">Halbmarathon</option>
+                                        <option value="Marathon">Marathon</option>
+                                    </select>
+
+                                </div>
+                            </div>                       
+                            
+                            <div class="pure-g">
+                                <div class="pure-u-1">
+                                    <div class="zustimmen pure-u-1">
+                                    <div id="veroffentlichen_out" class="pure-checkbox ">
+                                        
+                                        <input id="veroffentlichen" type="checkbox">
+                                        <label></label>
+                                    </div>
+                                    <span>Ich stimme der Veröffentlichung meiner Ergebnisse(Disziplin, Distanz, Gesamtzeit, Pace)  inkl Name, Vorname , Geschlecht und Geburtsjahr im Rahmen des Virtual Run zu. Bei Nichtzustimmung werden die Daten anonymisiert veröffentlicht.</span>
+                                    </div>
+
+                                    <div class="zustimmen pure-u-1">
+                                    <div id="datenschutz_out" class="pure-checkbox">
+                                        
+                                        <input id="datenschutz" type="checkbox">
+                                        <label></label>
+                                        
+                                    </div>
+                                    <span>Ja, ich habe die <a target="_blank" href="https://djk-sg-schoenbrunn.de/index.php/datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine Daten werden dabei nur streng zweckgebunden zur Abwicklung der Aktion “FRG Virtual Run” benutzt. Die Daten werden einen Monat nach Beendigung des Events gelöscht. Mit dem Absenden des Anmeldeformulars erkläre ich mich mit der Verarbeitung einverstanden.</span>
+                                    
+                                    </div>
+                            <button id="register" type="submit" class="pure-u-1 pure-button " disabled>Registrieren</button>
+                            </div>
+                        </fieldset>
+                        
+                    </form>
+                   
+
+
+                    <script
+  src="https://www.paypal.com/sdk/js?client-id=AceuiLsXfw8yIuzcT_5M0V-nG-D7uk-rhCUtl_vn-8AuD5Lwct4WKglAirOpipiubB7xCf73KpguqDx1"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+</script>
+                    <div id="paypal-button-container"></div>
+
+                    <script>
+                      //paypal.Buttons().render('#paypal-button-container');
+                      // This function displays Smart Payment Buttons on your web page.
+                    </script>
+                </div>
+            </div>
+        </div> <!-- end information -->
+    </div> <!-- end l-content -->
+    
+</section>
+<section id="shirt">
+<h3 class="section-headline">Finisher-Shirt</h3>
+
+<div class="pure-g t-shirt">
+    <div class="pure-u-1">
+        <div class="hash-out">#FRGVIRTUAL<span class="hashtag">RUN</span>COMPLETED</div>
+    </div>
+    <div class="pure-u-1 l-box">
+        <img src="images/sgrun-shirt.jpg"/>
+    </div>
+    <div class="pure-u-1  l-box">
+        <p>Sichere dir dein persönliches Finisher-Shirt als Erinnerung.
+        Nach erfolgreichem Bestreiten deiner Herausforderung gibt es ein besonderes Andenken zur Belohnung. Das Finisher-Shirt kann bei Sport Schuster in Freyung abgeholt werden. Voraussetzung hierfür ist natürlich, dass du die Startgebühr entrichtet und einen Nachweis über deine Aktivität(en) erbracht hast. Hinweis: Die Abbildung zeigt lediglich ein Muster zur Veranschaulichung. 
+        </p>
+    </div>
+</div>
+</section>
+
+<section id="faq">
+    <div class="l-content">
+        <div class="faq pure-g">
+            <h3 class="section-headline">Häufig gestellte Fragen</h3>
+            <div class="pure-u-1 l-box">
+            <h4>Wer kann mitmachen?</h4>
+            <p>Jeder. Man muss kein Mitglied der DJK-SG Schönbrunn am Lusen sein. Es wird lediglich zwischen Erwachsenen und Kindern unterschieden. 
+            </p>
+            <h4>Wer gilt als Kind?</h4>
+            <p>Als Kind gelten alle ab Jahrgang 2005 (also 15 Jahre und jünger)</p>
+            <h4>Was bedeutet Single?</h4>
+            <p>Bei Single nimmst du an einer, von dir auserwählten, Disziplin teil.</p>
+            
+            <!--<h4>Warum muss ich ein Passwort vergeben?</h4>
+            <p>Für die technische Umsetzung ist ein Passwort zwingend erforderlich. Du kannst dich mit deiner E-Mail Adresse und Passwort anmelden und deinen aktuellen Status einsehen. Du wirst dich aber zu keinem Zeitpunkt zwingend bei uns einloggen müssen.
+        </p>-->
+            <!--<h4>Kann Disziplin oder Distanz im Nachhinein geändert werden?</h4>
+            <p>Ist grundsätzlich möglich, sollte jedoch aus organisatorischen Gründen vermieden werden. Sucht euch sorgfältig eure Disziplin aus. Wenn ihr während dem Training merkt, dass ihr das Ziel nicht erreicht (oder das Ziel zu leicht ist), dann kann die Disziplin auch noch geändert werden. Bitte sende dazu eine E-Mail an “virutalrun@lusenkicker.de” oder eine WhatsApp Nachricht an 01...
+        </p>-->
+            <h4>Was bedeutet Double / Duathlon?</h4>
+            <p>Bei Double bzw. Duathlon nimmst du an zwei Disziplinen teil. Beispielsweise könntest du Radfahren (35 km) und Laufen (10 km) kombinieren.
+            </p>
+            
+            <h4>Anmeldeschluss</h4>
+            <p>Der Anmeldeschluss zum FRG Virtual Run 2020 endet mit dem letzten Tag der Wettkampfwoche, welche vom 29. Mai bis zum 14. Juni 2020 stattfindet. Somit ist Anmeldeschluss der 14. Juni 2020.</p>
+        
+        <h4>Wann bekomme ich meine Urkunde?</h4>
+<p>Die Urkunde bekommst du nur, wenn du bis zur Wettkampfwoche die Startgebühr bezahlt und einen Nachweis über die Aktivität(en) mit Zeit und Distanz eingereicht hast. Innerhalb von 14 Tagen wird die Urkunde per E-Mail versandt.</p>
+
+<h4>Wann bekomme ich mein Finisher-Shirt?</h4>
+<p>Das Finisher-Shirt bekommst du nur, wenn du bis zur Wettkampfwoche die Startgebühr bezahlt und einen Nachweis über die Aktivität(en) mit Zeit und Distanz eingereicht hast. Das Finisher-Shirt kann dann ab dem 10. Juni bei Sport Schuster in Freyung abgeholt werden.<br/>
+<b>Hinweis:</b> Für alle Anmeldungen nach dem 06. Juni. Hier kann das Finisher-Shirt voraussichtlich ab dem 23. Juni abgeholt werden.
+</p>
+
+<h4>Kann ich mir das Finisher-Shirt zusenden lassen?</h4>
+<p>Für Teilnehmer, mit einem Wohnort außerhalb vom Landkreis Freyung-Grafenau, bieten wir einen kostenlosen Finisher-Shirt Versand. In diesem Fall kontaktiere uns einfach per E-Mail oder WhatsApp</p>
+
+<h4>Wer ist der Organisator des FRG Virtual Run?</h4>
+<p>Veranstaltet wird das Event durch die DJK-SG Schönbrunn am Lusen 1961 e.V.</p>
+
+<h4>Wie läuft die Bezahlung der Startgebühr?</h4>
+<p>Bist du bei der DJK-SG Schönbrunn am Lusen Mitglied, bieten wir dir an, deine Startgebühr über das bei uns hinterlegte Konto abzubuchen. Andernfalls erhältst du eine E-Mail mit deiner Zahlungsaufforderung und den Kontodaten.</p>
+
+<h4>Wie zeichne ich eine Aktivität auf?</h4>
+<p>Für das Aktivitätstracking bietet sich die Verwendung deines Smartphones an. Wir empfehlen hierzu die Verwendung von Adidas Runtastic. Du kannst aber auch mit anderen Apps oder mit deiner Smartwatch aufzeichnen. Andere Anbieter wären z.B. Strava, Garmin Connect, Polar Flow, usw.</p>
+
+<h4>Wie kann ich meinen Nachweis an den Veranstalter schicken?</h4>
+<p>Mache einen Screenshot von deiner Aktivität und sende diesen per E-Mail an info@frg-virtualrun.de oder per WhatsApp Nachricht an 0174/7537171. </br> Als Nachweis für die Teilnahme sind Screenshots der unterschiedlichsten Lauf-Apps, wie z.B. Runtastic, Strava, Garmin Connect, Polar Flow etc., gestattet. 
+Damit wir deine Leistungen schneller zuordnen können, sollte wenn möglich die Startnummer bei der Übermittlung angegeben werden.<br/>Alternativ kannst du uns auch einfach deine Zeit und Distanz per E-Mail oder WhatsApp mitteilen.
+</p>
+
+<h4>Gibt es eine Wertung?</h4>
+<p>
+Nein. Es geht hier nicht um einen Konkurrenzwettbewerb! Der Spaß und die Bewegung an der frischen Luft stehen im Vordergrund. Wer bescheißen will, bescheißt sich nur selber!
+</p>
+
+<h4>Muss die gesendete Aktivität in der Wettkampfwoche stattgefunden haben?</h4>
+<p>Wir möchten einen Anreiz bieten, sich im Mai und darüber hinaus fit zu halten und an der frischen Luft zu trainieren. Daher empfehlen wir regelmäßiges Training und das Tracken in der Wettkampfwoche. Deine Aktivität kann aber auch zu jeder anderen Zeit während der Aktion stattgefunden haben.</p>
+
+<h4>Warum eine Startgebühr?</h4>
+<p>Obwohl natürlich Sport und Spaß im Vordergrund stehen, könnt ihr durch die Gebühr dazu beitragen, uns als Sportverein in dieser Zeit zu unterstützen.</p>
+
+<h4>Wie trainiere ich richtig?</h4>
+<p>Hier empfehlen wir auch die Verwendung von Adidas Running/Adidas Runtastic. Über nachfolgenden Link könnt ihr euch kostenlos für 3 Monate als Premium Mitglied registrieren. Anschließend könnt Ihr individuell für euch einen Trainingsplan erstellen lassen.
+<a href="https://www.runtastic.com/checkout/results?experiments=benefits_footer&hide_progress_indicator=true&code=RNT-WBDA-XAVD" target="_blank">Adidas Running (3 Monate Premium gratis)</a>
+
+Gerne könnt ihr euch aber auch per E-Mail an uns wenden, eventuell können wir euch den ein oder anderen Tipp geben. 
+</p>
+
+<h4>Wie vergleiche ich mich mit anderen Teilnehmern?</h4>
+<p>Hier gibt es die Möglichkeit unserer Adidas Running Community beizutreten. Dies ist möglich über nachfolgenden Link.
+<a href=" https://www.runtastic.com/groups/frg-virtualrun?utm_source=runtastic.pro&utm_medium=android&utm_campaign=user_generated_sharing&utm_content=group.runtastic&share_locale=de" target="_blank">Adidas Running DJK SG Schönbrunn</a></p>
+
+<h4>Wo werden die Ergebnisse veröffentlicht?</h4>
+<p>Die Ergebnisse findest du nach Abschluss der Aktion wieder auf unserer Sonderseite “Virtualrun”. Solltest du keine Veröffentlichung wünschen, werden deine Daten bei der Veröffentlichung anonymisiert. Dies kannst du bei der Anmeldung entscheiden.
+</p>
+<h4>Ich möchte den Verein anderweitig unterstützen. Bei wem kann ich mich melden?</h4>
+<p>Suche dir bitte unter nachfolgenden Link auf unserer Homepage einen passenden Ansprechpartner heraus. Grundsätzlich wird sich jedes unserer Vorstandschafts-Mitglieder um dein Anliegen kümmern.
+<a href="https://www.djk-sg-schoenbrunn.de/index.php/vereinsfuehrung" target="_blank">Kontakt Vereinsführung</a></p>
+
+<h4>Ist die Anmeldung von mehreren Teilnehmern mit einer E-Mail-Adresse möglich?</h4>
+<p>Über das Anmeldeformular ist pro E-Mail-Adresse nur eine Anmeldung möglich. Solltet ihr Probleme mit der Anmeldung weiterer Teilnehmer haben (beispielsweise Kinder), kontaktiert uns bitte per E-Mail oder WhatsApp.</p>
+
+<h4>Hinweise</h4>
+<p>Für Unfälle jeglicher Art und den daraus resultierenden Verletzungen oder Sachschäden, unabhängig von deren Ursache, wird vom Versanstalter keine Haftung übernommen.</p>
+
+            </div>
+        </div>
+    </div>            
+</section>
+
+<div id="sponsoren" >
+    <div class="pure-g sponsoren" >      
+        <h3 class="section-headline">Powered By</h3>
+    <div class="pure-u-1-2 pure-u-md-1-4 l-box"><img src="images/sg-wensauer-logo.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-4 l-box"><img src="images/sg-niemetz-logo.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-4 l-box"><img src="images/Niemetz-Schuster-logo.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-4 l-box"><img src="images/vrbank-hohenau.png"/></div>
+
+    
+    </div>
+</div>
+
+<div id="werbung">
+    <div class="pure-g" >      
+    <h3 class="section-headline">Bekannt aus</h3>
+    <div class="pure-u-0 pure-u-md-1-12"></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_01.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_02.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_09.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_06.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_08.png"/></div>
+    <div class="pure-u-0 pure-u-md-1-12"></div>
+    <div class="pure-u-0 pure-u-md-1-12"></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_04.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_10.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_07.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_03.png"/></div>
+    <div class="pure-u-1-2 pure-u-md-1-6 "><img src="images/footer-medien_05.png"/></div>
+    <div class="pure-u-0 pure-u-md-1-12"></div>
+    
+    
+    </div>
+</div>
+<div id="slogan" class="pure-g">
+    <div class="pure-u-1 slogan">
+        
+        <span>Ein Event der DJK SG Schönbrunn am Lusen 1961 e.V.</span>
+        <span><i class="fas fa-heart"></i> mehr als ein Verein</span>
+    </div>
+    </div>
+<footer>
+    <div class="pure-menu pure-menu-horizontal footer-menu">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="https://djk-sg-schoenbrunn.de/index.php/impressum" target="_blank" class="pure-menu-link">Impressum</a></li>
+            <li class="pure-menu-item"><a href="https://djk-sg-schoenbrunn.de/index.php/datenschutz" target="_blank" class="pure-menu-link">Datenschutz</a></li>
+            <li class="pure-menu-item"><a href="https://djk-sg-schoenbrunn.de" target="_blank" class="pure-menu-link">Organisator</a></li>
+        </ul>
+    </div>
+</footer>
+</div>
+</div>
+<div id="meldung"></div>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modal-1-title">
+            Anmeldung
+          </h2>
+          <button class="modal__close" data-custom-close="modal-1" aria-label="Close modal" data-micromodal-close></button>
+        </div>
+        <main class="modal__content" id="modal-1-content">
+            <form class="pure-form pure-form-stacked" id="anmelde-form">
+                <fieldset>
+                    <div class="pure-g">
+                        
+                        
+                        <div class="pure-u-1 ">
+                            
+                            <input placeholder="E-Mail" id="email_login" class="pure-u-1" type="email" required>
+                        </div>
+
+                        <div class="pure-u-1 ">
+                            
+                            <input placeholder="Passwort" id="passwort_login" class="pure-u-1" type="password" required>
+                        </div>
+                                                        
+                    </div>
+                
+                    <button type="submit" class="pure-u-1 pure-button ">Anmelden</button>
+                    
+                </fieldset>
+            </form>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal-challenges" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modal-title">
+            Challenge
+          </h2>
+          <button class="modal__close" data-custom-close="modal-challenges" aria-label="Close modal" data-micromodal-close></button>
+        </div>
+        <main class="modal__content" id="modal-challenges-content">
+            
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal-start" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modal-title">
+            Anmeldung erfolgreich
+          </h2>
+          
+        </div>
+        <main class="modal__content" id="modal-start-content">
+            
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal micromodal-slide" id="modal-register" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="modal-title">
+            Wähle dein Paket
+          </h2>
+          
+        </div>
+        <main class="modal__content" id="modal-register-content">
+            <div class="pure-g">
+                
+                <div class="pure-u-1 pure-md-1-3 chosePaket">
+                    <a href="#anmelden" id="choseDouble">Double (Zwei Diziplinen)</a>
+                </div>
+                <div class="pure-u-1 pure-md-1-3 chosePaket">
+                    <a href="#anmelden" id="choseSingle">Single (Eine Disziplin)</a>
+                </div>
+                <div class="pure-u-1 pure-md-1-3 chosePaket">
+                    <a href="#anmelden" id="choseKids">Kids (Kinder)</a>
+                </div>
+            </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-functions.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAAC59-5EtY0QeIqcBKfMVonXVnszWrMBs",
+    authDomain: "sg-virtual-run.firebaseapp.com",
+    databaseURL: "https://sg-virtual-run.firebaseio.com",
+    projectId: "sg-virtual-run",
+    storageBucket: "sg-virtual-run.appspot.com",
+    messagingSenderId: "741153612724",
+    appId: "1:741153612724:web:64e7f3d4745d6a027508e1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  //Auth and Firestore reference
+  const auth =firebase.auth();
+  const db =firebase.firestore();
+  const functions=firebase.functions();
+  //const admin = require('firebase-admin');
+
+</script>
+
+<script>
+
+</script>
+<script src="scripts/auth.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+<script src="scripts/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script src="scripts/pdf.js"></script>
+</body>
+</html>
